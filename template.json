@@ -1,133 +1,158 @@
 {
   "Actor": {
-    "types": ["character","npc","creature"],
+    "types": [
+      "character",
+      "npc",
+      "creature"
+    ],
     "templates": {
-      "characteristics":{
+      "characteristics": {
         "characteristics": {
-          "ws": {
-            "type": "number",
-            "label": "CHAR.WS",
-            "abrev": "CHARAbbrev.WS",
-            "initial": 20,
-            "modifier" : 0,
-            "advances": 0
+          "primary": {
+            "ws": {
+              "type": "number",
+              "label": "CHAR.WS",
+              "abrev": "CHARAbbrev.WS",
+              "initial": 20,
+              "modifier": 0,
+              "advances": 0
+            },
+            "bs": {
+              "type": "Number",
+              "label": "CHAR.BS",
+              "abrev": "CHARAbbrev.BS",
+              "initial": 20,
+              "modifier": 0,
+              "advances": 0
+            },
+            "s": {
+              "type": "Number",
+              "label": "CHAR.S",
+              "abrev": "CHARAbbrev.S",
+              "initial": 20,
+              "modifier": 0,
+              "advances": 0
+            },
+            "t": {
+              "type": "Number",
+              "label": "CHAR.T",
+              "abrev": "CHARAbbrev.T",
+              "initial": 20,
+              "modifier": 0,
+              "advances": 0
+            },
+            "ag": {
+              "type": "Number",
+              "label": "CHAR.Ag",
+              "abrev": "CHARAbbrev.Ag",
+              "initial": 20,
+              "modifier": 0,
+              "advances": 0
+            },
+            "int": {
+              "type": "Number",
+              "label": "CHAR.Int",
+              "abrev": "CHARAbbrev.Int",
+              "initial": 20,
+              "modifier": 0,
+              "advances": 0
+            },
+            "wp": {
+              "type": "Number",
+              "label": "CHAR.WP",
+              "abrev": "CHARAbbrev.WP",
+              "initial": 20,
+              "modifier": 0,
+              "advances": 0
+            },
+            "fel": {
+              "type": "Number",
+              "label": "CHAR.Fel",
+              "abrev": "CHARAbbrev.Fel",
+              "initial": 20,
+              "modifier": 0,
+              "advances": 0
+            }
           },
-          "bs": {
-            "type": "Number",
-            "label": "CHAR.BS",
-            "abrev": "CHARAbbrev.BS",
-            "initial": 20,
-            "modifier" : 0,
-            "advances": 0
-          },
-          "s": {
-            "type": "Number",
-            "label": "CHAR.S",
-            "abrev": "CHARAbbrev.S",
-            "initial": 20,
-            "modifier" : 0,
-            "advances": 0
-          },
-          "t": {
-            "type": "Number",
-            "label": "CHAR.T",
-            "abrev": "CHARAbbrev.T",
-            "initial": 20,
-            "modifier" : 0,
-            "advances": 0
-          },
-          "i": {
-            "type": "Number",
-            "label": "CHAR.I",
-            "abrev": "CHARAbbrev.I",
-            "initial": 20,
-            "modifier" : 0,
-            "advances": 0
-          },
-          "ag": {
-            "type": "Number",
-            "label": "CHAR.Ag",
-            "abrev": "CHARAbbrev.Ag",
-            "initial": 20,
-            "modifier" : 0,
-            "advances": 0
-          },
-          "dex": {
-            "type": "Number",
-            "label": "CHAR.Dex",
-            "abrev": "CHARAbbrev.Dex",
-            "initial": 20,
-            "modifier" : 0,
-            "advances": 0
-          },
-          "int": {
-            "type": "Number",
-            "label": "CHAR.Int",
-            "abrev": "CHARAbbrev.Int",
-            "initial": 20,
-            "modifier" : 0,
-            "advances": 0
-          },
-          "wp": {
-            "type": "Number",
-            "label": "CHAR.WP",
-            "abrev": "CHARAbbrev.WP",
-            "initial": 20,
-            "modifier" : 0,
-            "advances": 0
-          },
-          "fel": {
-            "type": "Number",
-            "label": "CHAR.Fel",
-            "abrev": "CHARAbbrev.Fel",
-            "initial": 20,
-            "modifier" : 0,
-            "advances": 0
+          "secondary": {
+            "attacks": {
+              "type": "number",
+              "label": "CHAR.Attacks",
+              "abrev": "CHARAbbrev.Attacks",
+              "initial": 0
+            },
+            "wounds": {
+              "type": "number",
+              "label": "CHAR.Wounds",
+              "abrev": "CHARAbbrev.Wounds",
+              "initial": 0
+            },
+            "sBonus": {
+              "type": "number",
+              "label": "CHAR.StrengthBonus",
+              "abrev": "CHARAbbrev.StrengthBonus",
+              "initial": 0
+            },
+            "tBonus": {
+              "type": "number",
+              "label": "CHAR.ToughBonus",
+              "abrev": "CHARAbbrev.ToughBonus",
+              "initial": 0
+            },
+            "movement": {
+              "type": "number",
+              "label": "CHAR.Movement",
+              "abrev": "CHARAbbrev.Movement",
+              "initial": 0
+            },
+            "magic": {
+              "type": "number",
+              "label": "CHAR.Magic",
+              "abrev": "CHARAbbrev.Magic",
+              "initial": 0
+            },
+            "insanity": {
+              "type": "number",
+              "label": "CHAR.Insanity",
+              "abrev": "CHARAbbrev.Insanity",
+              "initial": 0
+            },
+            "fate": {
+              "type": "number",
+              "label": "CHAR.Fate",
+              "abrev": "CHARAbbrev.Fate",
+              "initial": 0
+            }
           }
         }
       },
       "status": {
-        "status": {
-          "wounds": {
-            "type": "Number",
-            "label": "Wounds",
-            "abrev": "W",
-            "value": 8,
-            "max": 8
-          },
-          "advantage": {
-            "type": "Number",
-            "label": "Advantage",
-            "value": 0,
-            "max": 10
-          },
-          "criticalWounds": {
-            "type": "Number",
-            "label": "Critical Wounds",
-            "value": 0,
-            "max": 2
-          },
-          "sin": {
-            "type": "Number",
-            "label": "Sin",
-            "value": 0
-          },
-          "penalties": {
-            "type": "String",
-            "label": "Penalties",
-            "value": ""
-          },
-          "corruption": {
-            "type": "Number",
-            "label": "Corruption",
-            "value": 0
-          },
-          "encumbrance": {
-            "type": "Number",
-            "label": "Encumbrance",
-            "max": 0,
-            "current": 0
-          }
+        "criticalWounds": {
+          "type": "Number",
+          "label": "Critical Wounds",
+          "value": 0,
+          "max": 2
+        },
+        "sin": {
+          "type": "Number",
+          "label": "Sin",
+          "value": 0
+        },
+        "penalties": {
+          "type": "String",
+          "label": "Penalties",
+          "value": ""
+        },
+        "corruption": {
+          "type": "Number",
+          "label": "Corruption",
+          "value": 0
+        },
+        "encumbrance": {
+          "type": "Number",
+          "label": "Encumbrance",
+          "max": 0,
+          "current": 0
         }
       },
       "details": {
@@ -147,65 +172,26 @@
             "label": "Size",
             "value": "avg"
           },
-          "move": {
-            "type": "Number",
-            "label": "Movement",
-            "value": 4,
-            "walk": 0,
-            "run": 0
-          },
           "god": {
             "type": "String",
             "label": "God",
             "value": ""
-          },
-          "hitLocationTable": {
-            "value": "hitloc",
-            "type": "String",
-            "label": "Hit Location Table"
           }
         }
       }
     },
     "character": {
-      "templates": ["characteristics","status","details"],
-      "status": {
-        "fate": {
-          "type": "Number",
-          "label": "Fate",
-          "value": 0
-        },
-        "fortune": {
-          "type": "Number",
-          "label": "Fortune",
-          "value": 0
-        },
-        "resilience": {
-          "type": "Number",
-          "label": "Resilience",
-          "value": 0
-        },
-        "resolve": {
-          "type": "Number",
-          "label": "Resolve",
-          "value": 0
-        }
-      },
+      "templates": [
+        "characteristics",
+        "status",
+        "details"
+      ],
       "details": {
         "experience": {
           "type": "Number",
           "label": "Experience",
           "total": 0,
           "spent": 0
-        },
-        "personal-ambitions": {
-          "short-term": "",
-          "long-term": ""
-        },
-        "party-ambitions": {
-          "name": "",
-          "short-term": "",
-          "long-term": ""
         },
         "biography": {
           "type": "String",
@@ -215,11 +201,6 @@
         "gmnotes": {
           "type": "String",
           "label": "GM Notes",
-          "value": ""
-        },
-        "motivation": {
-          "type": "String",
-          "label": "Motivation",
           "value": ""
         },
         "class": {
@@ -232,14 +213,9 @@
           "label": "Career",
           "value": ""
         },
-        "careerlevel": {
-          "type": "String",
-          "label": "Career Level",
-          "value": ""
-        },
         "status": {
           "type": "String",
-          "value" : "",
+          "value": "",
           "standing": "",
           "tier": 0
         },
@@ -281,10 +257,18 @@
       }
     },
     "npc": {
-      "templates": ["characteristics","status","details"]
+      "templates": [
+        "characteristics",
+        "status",
+        "details"
+      ]
     },
     "creature": {
-      "templates": ["characteristics", "status", "details"],
+      "templates": [
+        "characteristics",
+        "status",
+        "details"
+      ],
       "excludedTraits": []
     }
   },
@@ -311,39 +295,39 @@
     "templates": {
       "quantity": {
         "quantity": {
-        "type": "Number",
-        "label": "Quantity",
-        "value": 1
+          "type": "Number",
+          "label": "Quantity",
+          "value": 1
         }
       },
       "encumbrance": {
         "encumbrance": {
-        "type": "Number",
-        "label": "Encumbrance",
-        "value": 0
+          "type": "Number",
+          "label": "Encumbrance",
+          "value": 0
         }
       },
       "price": {
         "price": {
-        "type": "String",
-        "label": "Price",
-        "gc": 0,
-        "ss": 0,
-        "bp": 0
+          "type": "String",
+          "label": "Price",
+          "gc": 0,
+          "ss": 0,
+          "bp": 0
         }
       },
       "availability": {
         "availability": {
-        "type": "String",
-        "label": "Availability",
-        "value": ""
+          "type": "String",
+          "label": "Availability",
+          "value": ""
         }
       },
       "description": {
         "description": {
-        "type": "String",
-        "label": "Description",
-        "value": ""
+          "type": "String",
+          "label": "Description",
+          "value": ""
         },
         "gmdescription": {
           "type": "String",
@@ -353,14 +337,16 @@
       },
       "location": {
         "location": {
-        "type": "Number",
-        "label": "Location",
-        "value": 0
+          "type": "Number",
+          "label": "Location",
+          "value": 0
         }
       }
     },
     "career": {
-      "templates": ["description"],
+      "templates": [
+        "description"
+      ],
       "careergroup": {
         "type": "String",
         "label": "Career Group",
@@ -395,7 +381,14 @@
       "incomeSkill": []
     },
     "weapon": {
-      "templates": ["description", "quantity", "encumbrance", "price", "availability", "location"],      
+      "templates": [
+        "description",
+        "quantity",
+        "encumbrance",
+        "price",
+        "availability",
+        "location"
+      ],
       "availability": {
         "type": "String",
         "label": "Availability",
@@ -404,7 +397,7 @@
       "damage": {
         "type": "String",
         "label": "Damage",
-        "value" : ""
+        "value": ""
       },
       "reach": {
         "type": "String",
@@ -453,7 +446,14 @@
       "equipped": false
     },
     "armour": {
-      "templates": ["description", "quantity", "encumbrance", "price", "availability", "location"],      
+      "templates": [
+        "description",
+        "quantity",
+        "encumbrance",
+        "price",
+        "availability",
+        "location"
+      ],
       "worn": {
         "type": "Boolean",
         "label": "Worn",
@@ -507,7 +507,14 @@
       }
     },
     "ammunition": {
-      "templates": ["description", "quantity", "encumbrance", "price", "availability", "location"],      
+      "templates": [
+        "description",
+        "quantity",
+        "encumbrance",
+        "price",
+        "availability",
+        "location"
+      ],
       "ammunitionType": {
         "type": "String",
         "label": "Ammunition Type",
@@ -540,7 +547,14 @@
       }
     },
     "container": {
-      "templates": ["description", "quantity", "encumbrance", "price", "availability", "location"],      
+      "templates": [
+        "description",
+        "quantity",
+        "encumbrance",
+        "price",
+        "availability",
+        "location"
+      ],
       "worn": {
         "type": "Boolean",
         "label": "Worn",
@@ -563,7 +577,14 @@
       }
     },
     "trapping": {
-      "templates": ["description", "quantity", "encumbrance", "price", "availability", "location"],
+      "templates": [
+        "description",
+        "quantity",
+        "encumbrance",
+        "price",
+        "availability",
+        "location"
+      ],
       "trappingType": {
         "type": "String",
         "label": "Trapping Type",
@@ -581,7 +602,9 @@
       }
     },
     "talent": {
-      "templates": ["description"],
+      "templates": [
+        "description"
+      ],
       "max": {
         "type": "String",
         "label": "Max Advances",
@@ -604,7 +627,9 @@
       }
     },
     "skill": {
-      "templates": ["description"],
+      "templates": [
+        "description"
+      ],
       "advanced": {
         "value": "",
         "type": "String"
@@ -629,7 +654,9 @@
       }
     },
     "spell": {
-      "templates": ["description"],
+      "templates": [
+        "description"
+      ],
       "lore": {
         "type": "String",
         "label": "Lore",
@@ -680,12 +707,14 @@
         "label": "Ingredient",
         "value": 0
       },
-      "wind" : {
+      "wind": {
         "value": ""
       }
     },
     "prayer": {
-      "templates": ["description"],
+      "templates": [
+        "description"
+      ],
       "type": {
         "type": "String",
         "label": "Type",
@@ -719,7 +748,9 @@
       }
     },
     "mutation": {
-      "templates": ["description"],
+      "templates": [
+        "description"
+      ],
       "mutationType": {
         "label": "Type",
         "type": "String",
@@ -737,7 +768,9 @@
       }
     },
     "injury": {
-      "templates": ["description"],
+      "templates": [
+        "description"
+      ],
       "location": {
         "value": "",
         "type": "String",
@@ -755,16 +788,18 @@
       }
     },
     "critical": {
-      "templates": ["description"],
+      "templates": [
+        "description"
+      ],
       "wounds": {
         "value": "1",
         "type": "String",
         "label": "Wounds"
       },
-      "modifier" : {
-        "value" : "",
-        "type" : "String",
-        "label" : "Test Modifier"
+      "modifier": {
+        "value": "",
+        "type": "String",
+        "label": "Test Modifier"
       },
       "location": {
         "value": "",
@@ -773,7 +808,9 @@
       }
     },
     "disease": {
-      "templates": ["description"],
+      "templates": [
+        "description"
+      ],
       "contraction": {
         "label": "Contraction",
         "value": "",
@@ -801,17 +838,21 @@
       }
     },
     "psychology": {
-      "templates": ["description"]
+      "templates": [
+        "description"
+      ]
     },
     "trait": {
-      "templates": ["description"],
+      "templates": [
+        "description"
+      ],
       "rollable": {
         "value": false,
         "label": "Rollable",
         "type": "Boolean",
         "rollCharacteristic": "",
         "bonusCharacteristic": "",
-        "defaultDifficulty" : "challenging"
+        "defaultDifficulty": "challenging"
       },
       "specification": {
         "value": "",
@@ -820,7 +861,12 @@
       }
     },
     "money": {
-      "templates": ["description", "quantity", "encumbrance", "location"],
+      "templates": [
+        "description",
+        "quantity",
+        "encumbrance",
+        "location"
+      ],
       "coinValue": {
         "label": "Value (in d)",
         "type": "Number",

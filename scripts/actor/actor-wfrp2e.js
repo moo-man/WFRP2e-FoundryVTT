@@ -124,31 +124,14 @@ class ActorWfrp2e extends Actor {
       const data = this.data;
 
       // For each characteristic, calculate the total and bonus value
-      for (let ch of Object.values(data.data.characteristics))
+      for (let ch of Object.values(data.data.characteristics.primary))
       {
         ch.value = ch.initial + ch.advances + (ch.modifier || 0);
-        ch.bonus = Math.floor(ch.value / 10)
-        ch.cost = WFRP_Utility._calculateAdvCost(ch.advances, "characteristic")
       }
 
-      // Only characters have experience
-      if ( data.type === "character" )
-        data.data.details.experience.current = data.data.details.experience.total - data.data.details.experience.spent;
 
-      // Auto calculation values - only calculate if user has not opted to enter ther own values
-      if (data.flags.autoCalcWalk)
-        data.data.details.move.walk = parseInt(data.data.details.move.value)* 2;
-
-      if (data.flags.autoCalcRun)
-        data.data.details.move.run = parseInt(data.data.details.move.value) * 4;
-
-      if (data.flags.autoCalcEnc)
-        data.data.status.encumbrance.max = data.data.characteristics.t.bonus + data.data.characteristics.s.bonus;
-
-      if (game.settings.get("wfrp2e", "capAdvantageIB"))
-        data.data.status.advantage.max = data.data.characteristics.i.bonus
-      else
-        data.data.status.advantage.max = 10;
+      data.data.characteristics.secondary.sBonus.value = Math.floor(data.data.characteristics.primary.s.value/10)
+      data.data.characteristics.secondary.tBonus.value = Math.floor(data.data.characteristics.primary.t.value/10)
 
     }
     catch(error)
@@ -1466,113 +1449,113 @@ class ActorWfrp2e extends Actor {
    */
   prepare()
   {
-    let preparedData = duplicate(this.data)
-    // Call prepareItems first to organize and process OwnedItems
-    mergeObject(preparedData, this.prepareItems())
+    // let preparedData = duplicate(this.data)
+    // // Call prepareItems first to organize and process OwnedItems
+    // mergeObject(preparedData, this.prepareItems())
 
-    // Add speciality functions for each Actor type
-    if (preparedData.type == "character")
-      this.prepareCharacter(preparedData)
+    // // Add speciality functions for each Actor type
+    // if (preparedData.type == "character")
+    //   this.prepareCharacter(preparedData)
 
-    if (preparedData.type == "npc")
-      this.prepareNPC(preparedData)
+    // if (preparedData.type == "npc")
+    //   this.prepareNPC(preparedData)
 
-    if (preparedData.type == "creature")
-      this.prepareCreature(preparedData)
+    // if (preparedData.type == "creature")
+    //   this.prepareCreature(preparedData)
 
-    // Find size based on Traits/Talents
-    let size;
-    let trait = preparedData.traits.find(t => t.name.toLowerCase().includes(game.i18n.localize("NAME.Size").toLowerCase()));
-    if (trait)
-      size = trait.data.specification.value;
-    else
-    {
-      size = preparedData.talents.find(x=>x.name.toLowerCase() == game.i18n.localize("NAME.Small").toLowerCase());
-      if (size)
-        size = size.name;
-      else 
-        size = game.i18n.localize("SPEC.Average")
-    }
+    // // Find size based on Traits/Talents
+    // let size;
+    // let trait = preparedData.traits.find(t => t.name.toLowerCase().includes(game.i18n.localize("NAME.Size").toLowerCase()));
+    // if (trait)
+    //   size = trait.data.specification.value;
+    // else
+    // {
+    //   size = preparedData.talents.find(x=>x.name.toLowerCase() == game.i18n.localize("NAME.Small").toLowerCase());
+    //   if (size)
+    //     size = size.name;
+    //   else 
+    //     size = game.i18n.localize("SPEC.Average")
+    // }
     
-    // If the size has been changed since the last known value, update the value
-    for (let s in WFRP2E.actorSizes)
-    {
-      // Inverse lookup - Size value to key (Average -> "avg")
-      if (WFRP2E.actorSizes[s] == size && preparedData.data.details.size.value != s)
-      {
-        this.update({"data.details.size.value" : s})
-      }
-    }
+    // // If the size has been changed since the last known value, update the value
+    // for (let s in WFRP2E.actorSizes)
+    // {
+    //   // Inverse lookup - Size value to key (Average -> "avg")
+    //   if (WFRP2E.actorSizes[s] == size && preparedData.data.details.size.value != s)
+    //   {
+    //     this.update({"data.details.size.value" : s})
+    //   }
+    // }
 
-    // Now that we have size, calculate wounds and token size
-    let wounds = this.calculateWounds(preparedData)
-    let tokenSize = WFRP2E.tokenSizes[preparedData.data.details.size.value]
-    preparedData.isToken = !!this.token;
+    // // Now that we have size, calculate wounds and token size
+    // let wounds = this.calculateWounds(preparedData)
+    // let tokenSize = WFRP2E.tokenSizes[preparedData.data.details.size.value]
+    // preparedData.isToken = !!this.token;
 
-    // If the max wounds has been changed since the last known value, update the value
-    if (preparedData.data.status.wounds.max != wounds && preparedData.flags.autoCalcWounds)
-    {
-      this.update({
-        "data.status.wounds.max" : wounds,
-        "data.status.wounds.value" : Number(wounds)
-      })
-    }
-    try // If the token size has been changed (based on actual Actor size), update the value
-    {
-      // Different update process based on if token or not.
-      if (this.isToken && this.token.data.height != tokenSize) // Actor checking if its prototype token is correct
-      {
-        this.token.update({"height" : tokenSize,"width" : tokenSize})
-      }
-      else if (preparedData.token.height != tokenSize) // Token checking whether its size is correct
-      {
-        this.update({"token.height" : tokenSize,"token.width" : tokenSize})
-      }
-    }
-    catch { }
+    // // If the max wounds has been changed since the last known value, update the value
+    // if (preparedData.data.status.wounds.max != wounds && preparedData.flags.autoCalcWounds)
+    // {
+    //   this.update({
+    //     "data.status.wounds.max" : wounds,
+    //     "data.status.wounds.value" : Number(wounds)
+    //   })
+    // }
+    // try // If the token size has been changed (based on actual Actor size), update the value
+    // {
+    //   // Different update process based on if token or not.
+    //   if (this.isToken && this.token.data.height != tokenSize) // Actor checking if its prototype token is correct
+    //   {
+    //     this.token.update({"height" : tokenSize,"width" : tokenSize})
+    //   }
+    //   else if (preparedData.token.height != tokenSize) // Token checking whether its size is correct
+    //   {
+    //     this.update({"token.height" : tokenSize,"token.width" : tokenSize})
+    //   }
+    // }
+    // catch { }
     
-    // Auto calculation flags - if the user hasn't disabled various autocalculated values, calculate them
-    if (preparedData.flags.autoCalcRun)
-    {
-      // This is specifically for the Stride trait, see prepareData() for the other auto-calc movement values
-      if(preparedData.traits.find(t => t.name.toLowerCase() == game.i18n.localize("NAME.Stride").toLowerCase()))
-        preparedData.data.details.move.run += preparedData.data.details.move.walk;
-    }
+    // // Auto calculation flags - if the user hasn't disabled various autocalculated values, calculate them
+    // if (preparedData.flags.autoCalcRun)
+    // {
+    //   // This is specifically for the Stride trait, see prepareData() for the other auto-calc movement values
+    //   if(preparedData.traits.find(t => t.name.toLowerCase() == game.i18n.localize("NAME.Stride").toLowerCase()))
+    //     preparedData.data.details.move.run += preparedData.data.details.move.walk;
+    // }
 
-    // talentTests is used to easily reference talent bonuses (e.g. in prepareTest function and dialog)
-    // instead of iterating through every item again to find talents when rolling
-    this.data.flags.talentTests = [];
-    for (let talent of preparedData.talents) // For each talent, if it has a Tests value, push it to the talentTests array
-      if (talent.data.tests.value)
-        this.data.flags.talentTests.push({talentName: talent.name, test : talent.data.tests.value, SL : talent.data.advances.value});
+    // // talentTests is used to easily reference talent bonuses (e.g. in prepareTest function and dialog)
+    // // instead of iterating through every item again to find talents when rolling
+    // this.data.flags.talentTests = [];
+    // for (let talent of preparedData.talents) // For each talent, if it has a Tests value, push it to the talentTests array
+    //   if (talent.data.tests.value)
+    //     this.data.flags.talentTests.push({talentName: talent.name, test : talent.data.tests.value, SL : talent.data.advances.value});
 
-    // ------------------------ Talent Modifications ------------------------
-    // These consist of Strike Mighty Blow, Accurate Shot, and Robust. Each determines
-    // how many advances there are according to preparedData, then modifies the flag value
-    // if there's any difference.
+    // // ------------------------ Talent Modifications ------------------------
+    // // These consist of Strike Mighty Blow, Accurate Shot, and Robust. Each determines
+    // // how many advances there are according to preparedData, then modifies the flag value
+    // // if there's any difference.
 
-    // Strike Mighty Blow Talent
-    let smb = preparedData.talents.find(t => t.name.toLowerCase() == game.i18n.localize("NAME.SMB").toLowerCase())
-    if (smb && this.data.flags.meleeDamageIncrease != smb.data.advances.value)
-      this.update({"flags.meleeDamageIncrease" : smb.data.advances.value});
-    else if (!smb && this.data.flags.meleeDamageIncrease)
-      this.update({"flags.meleeDamageIncrease" : 0});
+    // // Strike Mighty Blow Talent
+    // let smb = preparedData.talents.find(t => t.name.toLowerCase() == game.i18n.localize("NAME.SMB").toLowerCase())
+    // if (smb && this.data.flags.meleeDamageIncrease != smb.data.advances.value)
+    //   this.update({"flags.meleeDamageIncrease" : smb.data.advances.value});
+    // else if (!smb && this.data.flags.meleeDamageIncrease)
+    //   this.update({"flags.meleeDamageIncrease" : 0});
 
-    // Accurate Shot Talent
-    let accshot = preparedData.talents.find(t => t.name.toLowerCase() == game.i18n.localize("NAME.AS").toLowerCase())
-    if (accshot && this.data.flags.rangedDamageIncrease != accshot.data.advances.value)
-      this.update({"flags.rangedDamageIncrease" : accshot.data.advances.value});
-    else if (!accshot && this.data.flags.rangedDamageIncrease)
-      this.update({"flags.rangedDamageIncrease" : 0});
+    // // Accurate Shot Talent
+    // let accshot = preparedData.talents.find(t => t.name.toLowerCase() == game.i18n.localize("NAME.AS").toLowerCase())
+    // if (accshot && this.data.flags.rangedDamageIncrease != accshot.data.advances.value)
+    //   this.update({"flags.rangedDamageIncrease" : accshot.data.advances.value});
+    // else if (!accshot && this.data.flags.rangedDamageIncrease)
+    //   this.update({"flags.rangedDamageIncrease" : 0});
 
-    // Robust Talent
-    let robust = preparedData.talents.find(t => t.name.toLowerCase() == game.i18n.localize("NAME.Robust").toLowerCase())
-    if (robust && this.data.flags.robust != robust.data.advances.value)
-      this.update({"flags.robust" : robust.data.advances.value});
-    else if (!robust && this.data.flags.robust)
-      this.update({"flags.robust" : 0});
+    // // Robust Talent
+    // let robust = preparedData.talents.find(t => t.name.toLowerCase() == game.i18n.localize("NAME.Robust").toLowerCase())
+    // if (robust && this.data.flags.robust != robust.data.advances.value)
+    //   this.update({"flags.robust" : robust.data.advances.value});
+    // else if (!robust && this.data.flags.robust)
+    //   this.update({"flags.robust" : 0});
 
-    return preparedData;
+    // return preparedData;
   }
 
   /**
