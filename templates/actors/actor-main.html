@@ -132,42 +132,7 @@
 
 
 <div class="main-row first">
-  <div class="movement row-section">
-    <div class="move-section">
-      <div class="move-value">
-        <input name="data.details.move.value" type="text" value="{{data.details.move.value}}">
-      </div>
-      <div class="move-name">
-        <h4 id="movement-label">{{localize "Movement"}}</h4>
-      </div>
-    </div>
-    <div class="move-section">
-      <div class="move-value">
-        {{#if actor.flags.autoCalcWalk}}
-        <a class="auto-calc-toggle" toggle-type="walk">{{actor.data.details.move.walk}} {{localize "yds"}}</a>
-        {{else}}
-        <input class="auto-calc-toggle" toggle-type="walk" name="data.details.move.walk" type="text"
-          value="{{data.details.move.walk}}" data-dtype="String">
-        {{/if}}
-      </div>
-      <div class="move-name">
-        <h4 id="walk-label">{{localize "Walk"}}</h4>
-      </div>
-    </div>
-    <div class="move-section">
-      <div class="move-value">
-        {{#if actor.flags.autoCalcRun}}
-        <a class="auto-calc-toggle" toggle-type="run">{{actor.data.details.move.run}} {{localize "yds"}}</a>
-        {{else}}
-        <input class="auto-calc-toggle" toggle-type="run" name="data.details.move.run" type="text"
-          value="{{data.details.move.run}}" data-dtype="String">
-        {{/if}}
-      </div>
-      <div class="move-name">
-        <h4 id="run-label">{{localize "Run"}}</h4>
-      </div>
-    </div>
-  </div>
+
 
   <div class="fate-resilience row-section">
     <div class="fate-resilience-section">
@@ -182,18 +147,7 @@
         <a class = "metacurrency-value" data-point-type="fate">{{data.status.fate.value}}</a>
       </div>
     </div>
-    <div class="fate-resilience-section">
-      <span class="top label">{{localize "Resolve"}}</span>
-      <span class="bottom label">{{localize "Resilience"}}</span>
-    </div>
-    <div class="fate-resilience-section values">
-      <div class="top value">
-        <a class = "metacurrency-value" data-point-type="resolve">{{data.status.resolve.value}}</a>
-      </div>
-      <div class="bottom value">
-        <a class = "metacurrency-value" data-point-type="resilience">{{data.status.resilience.value}}</a>
-      </div>
-    </div>
+    
   </div>
 
   <div class="wounds row-section">
@@ -217,53 +171,7 @@
       </div>
     </div>
   </div>
-</div>
-
-<div class="main-row second">
-  <div class="criticalWounds row-section">
-    <div class="criticalWounds-section">
-      <span class="top label">{{localize "Critical Wounds"}}</span>
-      <div class="criticalWounds-value-box">
-        <div id="value">
-          <input name="data.status.criticalWounds.value" type="text" value="{{actor.criticalCount}}" readonly>
-        </div>
-        <div id="divisor" class="divisor">
-          /
-        </div>
-        <div id="criticalWounds-max">
-          {{#if actor.flags.autoCalcCritW}}
-          <a class="auto-calc-toggle" toggle-type="critW">{{data.status.criticalWounds.max}}</a>
-          {{else}}
-          <input class="auto-calc-toggle" toggle-type="critW" name="data.status.criticalWounds.max" type="text"
-            value="{{data.status.criticalWounds.max}}">
-          {{/if}}
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="corruption row-section">
-    <div class="corruption-section">
-      <span class="top label">{{localize "Corruption"}}</span>
-      <div class="corruption-value-box">
-        <div id="value">
-          <input name="data.status.corruption.value" type="text" value="{{data.status.corruption.value}}">
-        </div>
-        <div id="divisor" class="divisor">
-          /
-        </div>
-        <div id="corruption-max">
-          {{#if actor.flags.autoCalcCorruption}}
-          <a class="auto-calc-toggle" toggle-type="corruption">{{data.status.corruption.max}}</a>
-          {{else}}
-          <input class="auto-calc-toggle" toggle-type="corruption" name="data.status.corruption.max" type="text"
-            value="{{data.status.corruption.max}}">
-          {{/if}}
-        </div>
-      </div>
-    </div>
-  </div>
-
+  
   <div class="experience row-section">
     <div class="experience-section">
       <span class="top label">{{localize "Experience"}}</span>
@@ -284,6 +192,8 @@
     </div>
   </div>
 </div>
+
+
 
 <div class="career-list">
   <div class="inventory-header item">
