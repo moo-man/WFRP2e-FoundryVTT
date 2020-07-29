@@ -49,7 +49,18 @@
     "./pixi/aoe.js"
   ],
   "styles": ["./css/wfrp2e.css"],
-  "packs": [],
+  "packs": [
+  {
+      "name": "skills",
+      "label": "Skills",
+      "system": "wfrp2e",
+      "module": "wfrp2e-content",
+      "path": "./packs/skills.db",
+      "entity": "Item",
+      "tag" : "skill"
+    }
+     
+  ],
   "languages": [
     {
       "lang": "en",
