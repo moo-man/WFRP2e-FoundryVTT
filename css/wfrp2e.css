@@ -4071,7 +4071,7 @@
 
     .app.window-app.sheet.wfrp2e.actor.character-sheet .tab.main.active .main-row .fate-resilience.row-section {
       display: flex;
-      width: 60px;
+      width: 0px;
       margin: 0px 0px 0px 6px;
       border: 1px solid #736953a6;
       flex-grow: 1;
@@ -4455,7 +4455,7 @@
       margin: 0px 0px 0px 6px;
       border: 1px solid #736953a6;
       flex-grow: 1;
-      flex-basis: 85px;
+      flex-basis: 264px;
       /* background: var(--debug-background-color-red); */
     }
     .app.window-app.sheet.wfrp2e.actor.character-sheet .tab.main.active .main-row .experience.row-section .experience-section {
@@ -10000,7 +10000,7 @@
 
   .app.window-app.sheet.wfrp2e.actor.npc-sheet  .main-row .fate-resilience.row-section {
     display: flex;
-    width: 60px;
+    width: 40px;
     margin: 0px 0px 0px 6px;
     border: 1px solid #736953a6;
     flex-grow: 1;
