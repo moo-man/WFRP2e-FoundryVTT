@@ -54,7 +54,7 @@
       "name": "skills",
       "label": "Skills",
       "system": "wfrp2e",
-      "module": "wfrp2e-content",
+      "module": "wfrp2e",
       "path": "./packs/skills.db",
       "entity": "Item",
       "tag" : "skill"
