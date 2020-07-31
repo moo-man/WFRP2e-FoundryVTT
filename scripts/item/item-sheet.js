@@ -82,7 +82,7 @@ class ItemSheetWfrp2e extends ItemSheet
     }
     else if (this.item.type === "talent")
     {
-      data['talentMaxs'] = WFRP2E.talentMax;
+      data['relatedSkills'] = data.data.relatedSkills.join(", ");
     }
     else if (this.item.type == "weapon")
     {
@@ -256,47 +256,10 @@ class ItemSheetWfrp2e extends ItemSheet
         {
           return item.trim();
         });
+        
+        if (hasProperty(this.item.data, event.target.attributes["data-dest"].value))
+          this.item.update({ [event.target.attributes["data-dest"].value] : list})
 
-        switch (event.target.attributes["data-dest"].value)
-        {
-          case 'skills':
-            {
-              await this.item.update({'data.skills': list});
-            }
-            break;
-
-            // find the indices of the skills that match the earning skill input, send those
-            // values to data.incomeSkill
-          case 'earning':
-            {
-              this.item.update({'data.incomeSkill': []});
-              let earningSkills = [];
-              for (let sk in list)
-              {
-                let skillIndex = this.item.data.data.skills.indexOf(list[Number(sk)])
-
-                if (skillIndex == -1)
-                  continue;
-                else
-                  earningSkills.push(skillIndex);
-
-              }
-              await this.item.update({'data.incomeSkill': earningSkills});
-            }
-            break;
-          case 'talents':
-            {
-              await this.item.update({'data.talents': list});
-            }
-            break;
-
-          case 'trappings':
-            {
-              await this.item.update({'data.trappings': list});
-            }
-            break;
-
-        }
       });
 
 

@@ -121,9 +121,14 @@
     "ITEM.SkillModifier" : "Skill Modifier?",
     "ITEM.SkillModifierTT" : "Show the modifier in the Skills 'penalty' box",
     "ITEM.PrayerType" : "Prayer Type",
-    "ITEM.TalentMax" : "Talent Max",
-    "ITEM.TalentTests" : "Talent Tests",
+    "ITEM.TalentBonus" : "Bonus (Display)",
+    "ITEM.TalentBonusValue" : "Bonus Value",
+    "ITEM.TalentBonusTarget" : "Bonus Target",
+    "ITEM.TalentBonusConstant" : "Constant",
+    "ITEM.TalentRelatedSkills" : "Related Skills",
     "ITEM.IsGrouped" : "Is Grouped",
+
+    "COMMA-SEPARATED" : "comma-separated",
 
     "Basic" : "Basic",
     "Advanced" : "Advanced",

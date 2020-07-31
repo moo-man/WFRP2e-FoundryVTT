@@ -605,26 +605,13 @@
       "templates": [
         "description"
       ],
-      "max": {
-        "type": "String",
-        "label": "Max Advances",
-        "value": "1"
+      "bonus" : {
+        "value" : 0,
+        "display" : "",
+        "target" : "",
+        "constant" : false
       },
-      "advances": {
-        "type": "Number",
-        "label": "Advances",
-        "value": 1
-      },
-      "career": {
-        "value": "",
-        "type": "String",
-        "label": "Career"
-      },
-      "tests": {
-        "type": "String",
-        "label": "Tests",
-        "value": null
-      }
+      "relatedSkills" : []
     },
     "skill": {
       "templates": [

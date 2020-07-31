@@ -246,19 +246,9 @@ Combat.prototype._getInitiativeFormula = function(combatant) {
  {
   needMigration = true;
  }
- if (needMigration && game.user.isGM ) 
- {
-  new Dialog({
-    title: "A Glimmer of Hope",
-    content: `<p>Regarding the content wipe, I can't thank everyone enough for the emails sent to Cubicle 7. They are very supportive of implementing official modules for WFRP2e on Foundry. However, this will take time, so stay on the lookout! <br><br>Moo Man</p>`,
-    buttons: {
-      migrate: {
-        label : "Praise Sigmar",
-        callback : () => {game.settings.set("wfrp2e", "systemMigrationVersion", game.system.data.version)}
-      }
-    }
-  }).render(true)
-}
+if (needMigration && game.user.isGM ) 
+{
+  } 
 
 Hooks.on("closePermissionConfig", () => {
   if (game.permissions["FILES_BROWSE"].length < 4)
