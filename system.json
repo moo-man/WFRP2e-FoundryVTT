@@ -58,6 +58,16 @@
       "path": "./packs/skills.db",
       "entity": "Item",
       "tag" : "skill"
+    },
+	
+	{
+      "name": "talents",
+      "label": "talents",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/talents.db",
+      "entity": "Item",
+      "tag" : "talents"
     }
      
   ],
