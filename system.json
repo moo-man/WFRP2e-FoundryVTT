@@ -62,7 +62,7 @@
 	
 	{
       "name": "talents",
-      "label": "talents",
+      "label": "Talents",
       "system": "wfrp2e",
       "module": "wfrp2e",
       "path": "./packs/talents.db",
