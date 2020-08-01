@@ -127,6 +127,8 @@
     "ITEM.TalentBonusConstant" : "Constant",
     "ITEM.TalentRelatedSkills" : "Related Skills",
     "ITEM.IsGrouped" : "Is Grouped",
+    "ITEM.Half" : "Half",
+    "ITEM.Full" : "Full",
 
     "COMMA-SEPARATED" : "comma-separated",
 
@@ -310,7 +312,7 @@
     "Trait" : "Trait",
     "Protects" : "Protects",
     "AllowXPSpending" : "Force Advancement Indicator",
-    "TooltipAllowXPSpending" : "Show the Advancement Indicator regardless of career, which will allow you to automate spending experience.",
+    "Reload" : "Reload",
 
     "BROWSER.ItemCategories" : "Item Categories",
     "BROWSER.IncludeWorld" : "Include World Items?",
@@ -318,17 +320,6 @@
     "BROWSER.ModifiesDamage" : "Modifies Damage",
     "BROWSER.ModifiesRange" : "Modifies Range",
     "BROWSER.ItemList" : "Item List",
-
-    "CHARGEN.AttrInstructions1" : "Drag this card onto your sheet. You may rearrange the numbers at the cost of 25 XP. Or, if you wish to",
-    "CHARGEN.AttrInstructions2" : "or allocate points, subtract 50 XP.",
-    "CHARGEN.CareerAdvancement" : "Career Advancement",
-    "CHARGEN.CareerInstructions" : "Drag the career onto your character sheet and allocate 40 advances to the available skills. Also, add 1 Talent and allocate 5 advances across the marked characteristics. These advencements do not cost experience, so avoid clicking on the advancement buttons.",
-    "CHARGEN.ClassTrappings" : "Class Trappings",
-    "CHARGEN.ChooseCareer" : "Choose Career",
-    "CHARGEN.RerollCareer" : "Reroll Career",
-    "CHARGEN.SpeciesInstructions" : "Choose 6 skills and drag them to your character sheet if they are not already included. Put 5 advancements in 3 of them, and 3 advancements in the other 3. These do not cost experience so avoid clicking the advancement buttons.",
-    "CHARGEN.RerollInstructions" : "You may reroll any duplicate Talent.",
-    "CHARGEN.Or" : "OR",
 
     "DIALOG.CastChannel" : "Cast or Channel this spell?",
     "DIALOG.ChannelSkill" : "Channel Skill",

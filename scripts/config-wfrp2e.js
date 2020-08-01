@@ -406,6 +406,11 @@ WFRP2E.trappingCategories = {
     "misc": "WFRP2E.TrappingType.Misc",
 };
 
+WFRP2E.reloadActions = {
+    "half" : "ITEM.Half",
+    "full" : "ITEM.Full"
+}
+
 // Creature Sizes
 WFRP2E.actorSizes = {
     "tiny": "SPEC.Tiny",

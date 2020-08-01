@@ -399,15 +399,17 @@
         "label": "Damage",
         "value": ""
       },
-      "reach": {
-        "type": "String",
-        "label": "Reach",
-        "value": ""
-      },
       "range": {
         "type": "String",
         "label": "Range",
-        "value": ""
+        "short": "",
+        "long": ""
+      },
+      "reload": {
+        "type": "String",
+        "label": "Reload",
+        "num": 0,
+        "action": ""
       },
       "twohanded": {
         "type": "Boolean",
@@ -431,11 +433,6 @@
       "qualities": {
         "type": "String",
         "label": "Qualities",
-        "value": ""
-      },
-      "flaws": {
-        "type": "String",
-        "label": "Flaws",
         "value": ""
       },
       "special": {
@@ -611,6 +608,7 @@
         "target" : "",
         "constant" : false
       },
+      "bonuses" :[],
       "relatedSkills" : []
     },
     "skill": {

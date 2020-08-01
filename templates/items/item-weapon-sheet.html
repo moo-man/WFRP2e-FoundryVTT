@@ -80,27 +80,35 @@
     </div>
 
     {{#if isMelee}}
-    <div class="form-group">
-      <label class="label-text">{{localize "Reach"}}</label>
-      <select name="data.reach.value" data-dtype="{{data.reach.type}}">
-        {{#select data.reach.value}}
-        <option value=""></option>
-        {{#each weaponReaches as |reach r|}}
-        <option value="{{r}}">{{reach}}</option>
-        {{/each}}
-        {{/select}}
-      </select>
-    </div>
 
     {{else}}
 
     <div class="form-group">
       <label class="label-text">{{localize "Range"}}</label>
       <div class="input-box">
-        <input class="input-text" type="text" name="data.range.value" value="{{data.range.value}}"
-          data-dtype="{{data.range.type}}" />
+        <input class="input-text" type="text" name="data.range.short" value="{{data.range.short}}" data-dtype="{{data.range.short}}" />
+      </div>
+      <span>/</span>
+      <div class="input-box">
+        <input class="input-text" type="text" name="data.range.value" value="{{data.range.far}}" data-dtype="{{data.range.far}}" />
       </div>
     </div>
+
+    
+
+    <div class="form-group">
+      <label class="label-text">{{localize "Reload"}}</label>
+        <input class="input-text" type="text" name="data.reload.num" value="{{data.reload.num}}" data-dtype="num" />
+        <select name="data.reload.action" data-dtype="String"}}>
+        {{#select data.reload.action}}
+        {{#each reloadActions as |reload r|}}
+        <option value="{{r}}">{{reload}}</option>
+        {{/each}}
+        {{/select}}
+      </select>
+    </div>
+
+
 
     
     <div class="form-group">
@@ -128,17 +136,9 @@
     </div>
 
     <div class="form-group-stacked">
-      <label class="label-text">{{localize "Qualities"}} (comma-separated)</label>
+      <label class="label-text">{{localize "Qualities"}} ({{localize "COMMA-SEPARATED"}})</label>
       <div class="input-box">
         <input class="input-text" type="text" name="data.qualities.value" value="{{data.qualities.value}}"
-          data-dtype="{{data.properties.type}}" />
-      </div>
-    </div>
-
-    <div class="form-group-stacked">
-      <label class="label-text">{{localize "Flaws"}} (comma-separated)</label>
-      <div class="input-box">
-        <input class="input-text" type="text" name="data.flaws.value" value="{{data.flaws.value}}"
           data-dtype="{{data.properties.type}}" />
       </div>
     </div>

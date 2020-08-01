@@ -19,6 +19,7 @@ class ItemSheetWfrp2e extends ItemSheet
   static get defaultOptions() {
     const options = super.defaultOptions;
     options.tabs = [{navSelector: ".tabs", contentSelector: ".content", initial: "description"}]
+    options.scrollY = [".details"]
 	  return options;
   }
 
@@ -88,7 +89,7 @@ class ItemSheetWfrp2e extends ItemSheet
     {
       data['weaponGroups'] = WFRP2E.weaponGroups;
       data['availability'] = WFRP2E.availability;
-      data['weaponReaches'] = WFRP2E.weaponReaches
+      data['reloadActions'] = WFRP2E.reloadActions
       data['ammunitionGroups'] = WFRP2E.ammunitionGroups;
       data['weaponTypes'] = WFRP2E.weaponTypes;
       data.isMelee = WFRP2E.groupToType[this.item.data.data.weaponGroup.value] == "melee"
@@ -261,6 +262,51 @@ class ItemSheetWfrp2e extends ItemSheet
           this.item.update({ [event.target.attributes["data-dest"].value] : list})
 
       });
+
+
+
+      html.find(".bonus-input").change(ev => {
+        let data = this.item.data;
+        let bonuses = duplicate(data.data.bonuses)
+        let index = Number($(ev.currentTarget).attr("index"))
+        let target = $(ev.currentTarget).attr("target")
+        if (!bonuses.length)
+          bonuses = [{display : ev.target.value}]
+        else
+        {
+          if (target != "constant")
+            bonuses[index][target] = ev.target.value
+          else 
+          {
+            bonuses[index]["constant"] = !bonuses[index]["constant"]
+          }
+        }
+        this.item.update({"data.bonuses" : bonuses})
+      })
+
+      html.find(".add-talent-bonus").change(ev => {
+        let bonuses = duplicate(this.item.data.data.bonuses)
+        bonuses.push({});
+        this.item.update({"data.bonuses" : bonuses})
+      })
+
+      html.find(".bonus-input.checkbox").click(ev => {
+        this._onSubmit(event);
+        let data = this.item.data;
+        let bonuses = duplicate(data.data.bonuses)
+        let index = Number($(ev.currentTarget).attr("index"))
+        bonuses[index]["constant"] = !bonuses[index]["constant"]
+        this.item.update({"data.bonuses" : bonuses})
+      })
+
+      html.find(".add-talent-bonus").click(ev => {
+        let bonuses = duplicate(this.item.data.data.bonuses)
+        bonuses.push({display: "New Bonus"});
+        this.item.update({"data.bonuses" : bonuses})
+      })
+
+
+
 
 
     // If the user changes a grouped skill that is in their current career,
