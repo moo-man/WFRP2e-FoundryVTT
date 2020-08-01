@@ -68,8 +68,20 @@
       "path": "./packs/talents.db",
       "entity": "Item",
       "tag" : "talents"
-    }
+    },
      
+	{
+      "name": "weapons",
+      "label": "Weapons",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/weapons.db",
+      "entity": "Item",
+      "tag" : "weapons"
+    }, 
+	 
+	 
+	 
   ],
   "languages": [
     {
