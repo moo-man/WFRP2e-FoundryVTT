@@ -371,8 +371,10 @@ WFRP2E.locations = {
 WFRP2E.availability = {
     "None": "-",
     "common": "WFRP2E.Availability.Common",
+	"average": "WFRP2E.Availability.Average",
     "scarce": "WFRP2E.Availability.Scarce",
     "rare": "WFRP2E.Availability.Rare",
+	"very rare": "WFRP2E.Availability.VeryRare",
     "exotic": "WFRP2E.Availability.Exotic",
 }
 
@@ -621,6 +623,12 @@ WFRP2E.availabilityTable = {
             test: 100,
             stock: '2'
         },
+		
+		"WFRP2E.Availability.Average": {
+            test: 50,
+            stock: '∞'
+        },
+		
         "WFRP2E.Availability.Scarce": {
             test: 30,
             stock: '1'
@@ -629,6 +637,12 @@ WFRP2E.availabilityTable = {
             test: 15,
             stock: '1'
         },
+		
+		 "WFRP2E.Availability.VeryRare": {
+            test: 5,
+            stock: '1'
+        },
+		
         "WFRP2E.Availability.Exotic": {
             test: 0,
             stock: '0'
@@ -639,6 +653,12 @@ WFRP2E.availabilityTable = {
             test: 100,
             stock: '2d10'
         },
+		
+		"WFRP2E.Availability.Average": {
+            test: 75,
+            stock: '∞'
+        },
+		
         "WFRP2E.Availability.Scarce": {
             test: 60,
             stock: '1d10'
@@ -647,6 +667,12 @@ WFRP2E.availabilityTable = {
             test: 30,
             stock: '1d5'
         },
+		
+		"WFRP2E.Availability.VeryRare": {
+            test: 15,
+            stock: '0'
+        },
+		
         "WFRP2E.Availability.Exotic": {
             test: 0,
             stock: '0'
@@ -657,14 +683,27 @@ WFRP2E.availabilityTable = {
             test: 100,
             stock: '∞'
         },
-        "WFRP2E.Availability.Scarce": {
+		
+		"WFRP2E.Availability.Average": {
             test: 90,
             stock: '∞'
         },
+		
+        "WFRP2E.Availability.Scarce": {
+            test: 80,
+            stock: '∞'
+        },
+		
         "WFRP2E.Availability.Rare": {
             test: 45,
             stock: '∞'
         },
+		
+		"WFRP2E.Availability.VeryRare": {
+            test: 25,
+            stock: '∞'
+        },
+		
         "WFRP2E.Availability.Exotic": {
             test: 0,
             stock: '0'

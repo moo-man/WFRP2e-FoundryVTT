@@ -450,8 +450,10 @@
     "WFRP2E.ArmourType.Other" : "Other",
 
     "WFRP2E.Availability.Common" : "Common",
+	"WFRP2E.Availability.Average" : "Average",
     "WFRP2E.Availability.Scarce" : "Scarce",
     "WFRP2E.Availability.Rare" : "Rare",
+	"WFRP2E.Availability.VeryRare" : "Very Rare",
     "WFRP2E.Availability.Exotic" : "Exotic",
 
     "MARKET.Village" : "Village",
