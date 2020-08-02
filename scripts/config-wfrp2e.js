@@ -619,14 +619,25 @@ const PSEUDO_ENTITIES = [
 
 WFRP2E.availabilityTable = {
     "MARKET.Village": {
-        "WFRP2E.Availability.Common": {
+        
+		"WFRP2E.Availability.Abundant": {
             test: 100,
-            stock: '2'
+            stock: '∞'
+        },
+			
+		"WFRP2E.Availability.Plentiful": {
+            test: 90,
+            stock: '∞'
+        },
+			
+		"WFRP2E.Availability.Common": {
+            test: 80,
+            stock: '∞'
         },
 		
 		"WFRP2E.Availability.Average": {
             test: 50,
-            stock: '∞'
+            stock: '2'
         },
 		
         "WFRP2E.Availability.Scarce": {
@@ -649,14 +660,26 @@ WFRP2E.availabilityTable = {
         }
     },
     "MARKET.Town": {
-        "WFRP2E.Availability.Common": {
+        
+		"WFRP2E.Availability.Abundant": {
             test: 100,
-            stock: '2d10'
+            stock: '∞'
+        },
+			
+		"WFRP2E.Availability.Plentiful": {
+            test: 90,
+            stock: '∞'
+        },
+		
+		
+		"WFRP2E.Availability.Common": {
+            test: 85,
+            stock: '∞'
         },
 		
 		"WFRP2E.Availability.Average": {
             test: 75,
-            stock: '∞'
+            stock: '2d10'
         },
 		
         "WFRP2E.Availability.Scarce": {
@@ -679,13 +702,24 @@ WFRP2E.availabilityTable = {
         }
     },
     "MARKET.City": {
-        "WFRP2E.Availability.Common": {
+        
+		"WFRP2E.Availability.Abundant": {
             test: 100,
+            stock: '∞'
+        },
+			
+		"WFRP2E.Availability.Plentiful": {
+            test: 95,
+            stock: '∞'
+        },
+		
+		"WFRP2E.Availability.Common": {
+            test: 90,
             stock: '∞'
         },
 		
 		"WFRP2E.Availability.Average": {
-            test: 90,
+            test: 85,
             stock: '∞'
         },
 		

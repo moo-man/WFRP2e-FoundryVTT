@@ -449,7 +449,9 @@
     "WFRP2E.ArmourType.Plate" : "Plate",
     "WFRP2E.ArmourType.Other" : "Other",
 
-    "WFRP2E.Availability.Common" : "Common",
+    "WFRP2E.Availability.Abundant" : "Abundant",
+	"WFRP2E.Availability.Plentiful" : "Plentiful",
+	"WFRP2E.Availability.Common" : "Common",
 	"WFRP2E.Availability.Average" : "Average",
     "WFRP2E.Availability.Scarce" : "Scarce",
     "WFRP2E.Availability.Rare" : "Rare",
