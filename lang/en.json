@@ -443,9 +443,8 @@
     "WFRP2E.Reach.VLong" : "Very Long",
     "WFRP2E.Reach.Massive" : "Massive",
 
-    "WFRP2E.ArmourType.SLeather" : "Soft Leather",
-    "WFRP2E.ArmourType.BLeather" : "Boiled Leather",
-    "WFRP2E.ArmourType.Mail" : "Mail",
+    "WFRP2E.ArmourType.Leather" : "Leather",
+    "WFRP2E.ArmourType.Chain" : "Chain",
     "WFRP2E.ArmourType.Plate" : "Plate",
     "WFRP2E.ArmourType.Other" : "Other",
 

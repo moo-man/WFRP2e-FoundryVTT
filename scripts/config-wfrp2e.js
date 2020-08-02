@@ -319,9 +319,8 @@ WFRP2E.armorFlaws = {
 
 // Equipment Types
 WFRP2E.armorTypes = {
-    "softLeather": "WFRP2E.ArmourType.SLeather",
-    "boiledLeather": "WFRP2E.ArmourType.BLeather",
-    "mail": "WFRP2E.ArmourType.Mail",
+    "leather": "WFRP2E.ArmourType.Leather",
+    "chain": "WFRP2E.ArmourType.Chain",
     "plate": "WFRP2E.ArmourType.Plate",
     "other": "WFRP2E.ArmourType.Other"
 };
