@@ -111,6 +111,16 @@
     },
 	
 	{
+      "name": "lighting",
+      "label": "Lighting",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/lighting.db",
+      "entity": "Item",
+      "tag" : "lighting"
+    },
+	
+	{
       "name": "carrying-equipment",
       "label": "Carrying Equipment",
       "system": "wfrp2e",
