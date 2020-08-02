@@ -99,6 +99,16 @@
       "entity": "Item",
       "tag" : "clothing"
     },
+	
+	{
+      "name": "food-and-drink",
+      "label": "Food and Drink",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/food-and-drink.db",
+      "entity": "Item",
+      "tag" : "food-and-drink"
+    },
 	 
 	{
       "name": "ammunition",
