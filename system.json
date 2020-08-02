@@ -110,6 +110,16 @@
       "tag" : "miscellanea"
     },
 	
+	{
+      "name": "tools",
+      "label": "Tools",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/tools.db",
+      "entity": "Item",
+      "tag" : "tools"
+    },
+	
 	
 	
 	{
