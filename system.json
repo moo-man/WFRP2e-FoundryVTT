@@ -78,10 +78,19 @@
       "path": "./packs/weapons.db",
       "entity": "Item",
       "tag" : "weapons"
-    } 
+    }, 
 	 
+	{
+      "name": "ammunition",
+      "label": "Ammunition",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/ammunition.db",
+      "entity": "Item",
+      "tag" : "ammunition"
+    }
 	 
-	 
+		 
   ],
   "languages": [
     {
