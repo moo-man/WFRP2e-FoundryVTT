@@ -109,6 +109,18 @@
       "entity": "Item",
       "tag" : "food-and-drink"
     },
+	
+	{
+      "name": "carrying-equipment",
+      "label": "Carrying Equipment",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/carrying-equipment.db",
+      "entity": "Item",
+      "tag" : "carrying-equipment"
+    },
+	
+	
 	 
 	{
       "name": "ammunition",
