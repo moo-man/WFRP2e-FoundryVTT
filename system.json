@@ -89,6 +89,16 @@
       "entity": "Item",
       "tag" : "armour"
     },
+	
+	{
+      "name": "clothing",
+      "label": "Clothing",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/clothing.db",
+      "entity": "Item",
+      "tag" : "clothing"
+    },
 	 
 	{
       "name": "ammunition",
