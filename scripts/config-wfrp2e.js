@@ -370,7 +370,9 @@ WFRP2E.locations = {
 // Trapping Availability
 WFRP2E.availability = {
     "None": "-",
-    "common": "WFRP2E.Availability.Common",
+    "Abundant": "WFRP2E.Availability.Abundant",
+	"Plentiful": "WFRP2E.Availability.Plentiful",
+	"common": "WFRP2E.Availability.Common",
 	"average": "WFRP2E.Availability.Average",
     "scarce": "WFRP2E.Availability.Scarce",
     "rare": "WFRP2E.Availability.Rare",
