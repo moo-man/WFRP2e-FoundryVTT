@@ -101,6 +101,18 @@
     },
 	
 	{
+      "name": "miscellanea",
+      "label": "Miscellanea",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/miscellanea.db",
+      "entity": "Item",
+      "tag" : "miscellanea"
+    },
+	
+	
+	
+	{
       "name": "food-and-drink",
       "label": "Food and Drink",
       "system": "wfrp2e",
