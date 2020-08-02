@@ -120,7 +120,15 @@
       "tag" : "tools"
     },
 	
-	
+	{
+      "name": "special-equipment",
+      "label": "Special Equipment",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/special-equipment.db",
+      "entity": "Item",
+      "tag" : "special-equipment"
+    },
 	
 	{
       "name": "food-and-drink",
