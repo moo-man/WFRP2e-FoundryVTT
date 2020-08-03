@@ -68,8 +68,111 @@
       "path": "./packs/talents.db",
       "entity": "Item",
       "tag" : "talents"
-    }
+    },
      
+	{
+      "name": "weapons",
+      "label": "Weapons",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/weapons.db",
+      "entity": "Item",
+      "tag" : "weapons"
+    }, 
+	
+	{
+      "name": "armour",
+      "label": "Armour",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/armour.db",
+      "entity": "Item",
+      "tag" : "armour"
+    },
+	
+	{
+      "name": "clothing",
+      "label": "Clothing",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/clothing.db",
+      "entity": "Item",
+      "tag" : "clothing"
+    },
+	
+	{
+      "name": "miscellanea",
+      "label": "Miscellanea",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/miscellanea.db",
+      "entity": "Item",
+      "tag" : "miscellanea"
+    },
+	
+	{
+      "name": "tools",
+      "label": "Tools",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/tools.db",
+      "entity": "Item",
+      "tag" : "tools"
+    },
+	
+	{
+      "name": "special-equipment",
+      "label": "Special Equipment",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/special-equipment.db",
+      "entity": "Item",
+      "tag" : "special-equipment"
+    },
+	
+	{
+      "name": "food-and-drink",
+      "label": "Food and Drink",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/food-and-drink.db",
+      "entity": "Item",
+      "tag" : "food-and-drink"
+    },
+	
+	{
+      "name": "lighting",
+      "label": "Lighting",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/lighting.db",
+      "entity": "Item",
+      "tag" : "lighting"
+    },
+	
+	{
+      "name": "carrying-equipment",
+      "label": "Carrying Equipment",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/carrying-equipment.db",
+      "entity": "Item",
+      "tag" : "carrying-equipment"
+    },
+	
+	
+	 
+	{
+      "name": "ammunition",
+      "label": "Ammunition",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/ammunition.db",
+      "entity": "Item",
+      "tag" : "ammunition"
+    }
+	 
+		 
   ],
   "languages": [
     {

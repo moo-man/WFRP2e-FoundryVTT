@@ -319,9 +319,8 @@ WFRP2E.armorFlaws = {
 
 // Equipment Types
 WFRP2E.armorTypes = {
-    "softLeather": "WFRP2E.ArmourType.SLeather",
-    "boiledLeather": "WFRP2E.ArmourType.BLeather",
-    "mail": "WFRP2E.ArmourType.Mail",
+    "leather": "WFRP2E.ArmourType.Leather",
+    "chain": "WFRP2E.ArmourType.Chain",
     "plate": "WFRP2E.ArmourType.Plate",
     "other": "WFRP2E.ArmourType.Other"
 };
@@ -370,9 +369,13 @@ WFRP2E.locations = {
 // Trapping Availability
 WFRP2E.availability = {
     "None": "-",
-    "common": "WFRP2E.Availability.Common",
+    "Abundant": "WFRP2E.Availability.Abundant",
+	"Plentiful": "WFRP2E.Availability.Plentiful",
+	"common": "WFRP2E.Availability.Common",
+	"average": "WFRP2E.Availability.Average",
     "scarce": "WFRP2E.Availability.Scarce",
     "rare": "WFRP2E.Availability.Rare",
+	"very rare": "WFRP2E.Availability.VeryRare",
     "exotic": "WFRP2E.Availability.Exotic",
 }
 
@@ -617,10 +620,27 @@ const PSEUDO_ENTITIES = [
 
 WFRP2E.availabilityTable = {
     "MARKET.Village": {
-        "WFRP2E.Availability.Common": {
+        
+		"WFRP2E.Availability.Abundant": {
             test: 100,
+            stock: '∞'
+        },
+			
+		"WFRP2E.Availability.Plentiful": {
+            test: 90,
+            stock: '∞'
+        },
+			
+		"WFRP2E.Availability.Common": {
+            test: 80,
+            stock: '∞'
+        },
+		
+		"WFRP2E.Availability.Average": {
+            test: 50,
             stock: '2'
         },
+		
         "WFRP2E.Availability.Scarce": {
             test: 30,
             stock: '1'
@@ -629,16 +649,40 @@ WFRP2E.availabilityTable = {
             test: 15,
             stock: '1'
         },
+		
+		 "WFRP2E.Availability.VeryRare": {
+            test: 5,
+            stock: '1'
+        },
+		
         "WFRP2E.Availability.Exotic": {
             test: 0,
             stock: '0'
         }
     },
     "MARKET.Town": {
-        "WFRP2E.Availability.Common": {
+        
+		"WFRP2E.Availability.Abundant": {
             test: 100,
+            stock: '∞'
+        },
+			
+		"WFRP2E.Availability.Plentiful": {
+            test: 90,
+            stock: '∞'
+        },
+		
+		
+		"WFRP2E.Availability.Common": {
+            test: 85,
+            stock: '∞'
+        },
+		
+		"WFRP2E.Availability.Average": {
+            test: 75,
             stock: '2d10'
         },
+		
         "WFRP2E.Availability.Scarce": {
             test: 60,
             stock: '1d10'
@@ -647,24 +691,54 @@ WFRP2E.availabilityTable = {
             test: 30,
             stock: '1d5'
         },
+		
+		"WFRP2E.Availability.VeryRare": {
+            test: 15,
+            stock: '0'
+        },
+		
         "WFRP2E.Availability.Exotic": {
             test: 0,
             stock: '0'
         }
     },
     "MARKET.City": {
-        "WFRP2E.Availability.Common": {
+        
+		"WFRP2E.Availability.Abundant": {
             test: 100,
             stock: '∞'
         },
-        "WFRP2E.Availability.Scarce": {
+			
+		"WFRP2E.Availability.Plentiful": {
+            test: 95,
+            stock: '∞'
+        },
+		
+		"WFRP2E.Availability.Common": {
             test: 90,
             stock: '∞'
         },
+		
+		"WFRP2E.Availability.Average": {
+            test: 85,
+            stock: '∞'
+        },
+		
+        "WFRP2E.Availability.Scarce": {
+            test: 80,
+            stock: '∞'
+        },
+		
         "WFRP2E.Availability.Rare": {
             test: 45,
             stock: '∞'
         },
+		
+		"WFRP2E.Availability.VeryRare": {
+            test: 25,
+            stock: '∞'
+        },
+		
         "WFRP2E.Availability.Exotic": {
             test: 0,
             stock: '0'
