@@ -796,28 +796,13 @@
       "templates": [
         "description"
       ],
-      "contraction": {
-        "label": "Contraction",
-        "value": "",
-        "type": "String"
-      },
-      "incubation": {
-        "label": "Incubation",
-        "value": "",
-        "type": "String"
-      },
       "duration": {
         "label": "Duration",
         "value": "",
         "type": "String"
       },
-      "symptoms": {
-        "label": "Symptoms",
-        "value": "",
-        "type": "String"
-      },
-      "permanent": {
-        "label": "Permanent",
+      "effects": {
+        "label": "Effects",
         "value": "",
         "type": "String"
       }
