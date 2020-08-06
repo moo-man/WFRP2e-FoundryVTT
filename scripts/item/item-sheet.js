@@ -106,20 +106,11 @@ class ItemSheetWfrp2e extends ItemSheet
     }
     else if (this.item.type == "spell")
     {
-      if (WFRP2E.magicLores[this.item.data.data.lore.value])
-      {
-        data["loreValue"] = WFRP2E.magicLores[this.item.data.data.lore.value]
-      }
-      else
-      {
-        data["loreValue"] = this.item.data.data.lore.value;
-      }
-      data["descriptionAndLore"] = WFRP_Utility._spellDescription(this.item.data)
-
+      data["templateSizes"] = WFRP2E.templates;
     }
     else if (this.item.type == "prayer")
     {
-      data['prayerTypes'] = WFRP2E.prayerTypes;
+      data["templateSizes"] = WFRP2E.templates;
     }
 
 

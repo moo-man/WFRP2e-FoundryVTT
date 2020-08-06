@@ -485,6 +485,13 @@ WFRP2E.magicWind = {
 };
 
 
+WFRP2E.templates = {
+    "small" : "Small",
+    "large" : "Large",
+    "cone" : "Cone",
+}
+
+
 
 // Types of prayers
 WFRP2E.prayerTypes = {

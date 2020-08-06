@@ -645,25 +645,12 @@
       "lore": {
         "type": "String",
         "label": "Lore",
-        "value": "",
-        "effect": ""
+        "value": ""
       },
       "range": {
         "type": "String",
         "label": "Range",
         "value": ""
-      },
-      "target": {
-        "type": "String",
-        "label": "Target",
-        "value": "",
-        "aoe": false
-      },
-      "duration": {
-        "type": "String",
-        "label": "Duration",
-        "value": "",
-        "extendable": false
       },
       "damage": {
         "type": "String",
@@ -673,26 +660,20 @@
       "cn": {
         "type": "Number",
         "label": "Casting Number",
-        "value": 0,
-        "SL": 0
+        "value": 0
       },
       "magicMissile": {
         "type": "Boolean",
         "label": "Magic Missile",
         "value": false
       },
-      "memorized": {
-        "type": "Boolean",
-        "label": "Memorized",
-        "value": false
-      },
-      "ingredients": [],
-      "currentIng": {
-        "type": "Number",
+      "ingredient": {
+        "type": "String",
         "label": "Ingredient",
-        "value": 0
+        "value": "",
+        "bonus": 0
       },
-      "wind": {
+      "template": {
         "value": ""
       }
     },
@@ -700,14 +681,9 @@
       "templates": [
         "description"
       ],
-      "type": {
+      "lore": {
         "type": "String",
-        "label": "Type",
-        "value": ""
-      },
-      "god": {
-        "type": "String",
-        "label": "God",
+        "label": "Lore",
         "value": ""
       },
       "range": {
@@ -715,20 +691,28 @@
         "label": "Range",
         "value": ""
       },
-      "duration": {
-        "type": "String",
-        "label": "Duration",
-        "value": ""
-      },
-      "target": {
-        "type": "String",
-        "label": "Target",
-        "value": "",
-        "aoe": false
-      },
       "damage": {
         "type": "String",
         "label": "Damage",
+        "value": ""
+      },
+      "cn": {
+        "type": "Number",
+        "label": "Casting Number",
+        "value": 0
+      },
+      "magicMissile": {
+        "type": "Boolean",
+        "label": "Magic Missile",
+        "value": false
+      },
+      "ingredient": {
+        "type": "String",
+        "label": "Ingredient",
+        "value": "",
+        "bonus": 0
+      },
+      "template": {
         "value": ""
       }
     },
