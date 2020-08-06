@@ -121,6 +121,16 @@
     },
 	
 	{
+      "name": "disease",
+      "label": "Disease",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/disease.db",
+      "entity": "Item",
+      "tag" : "disease"
+    },
+	
+	{
       "name": "special-equipment",
       "label": "Special Equipment",
       "system": "wfrp2e",
