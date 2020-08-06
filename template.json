@@ -662,6 +662,11 @@
         "label": "Casting Number",
         "value": 0
       },
+      "time": {
+        "type": "String",
+        "label": "Casting Time",
+        "value": ""
+      },
       "magicMissile": {
         "type": "Boolean",
         "label": "Magic Missile",
@@ -700,6 +705,11 @@
         "type": "Number",
         "label": "Casting Number",
         "value": 0
+      },
+      "time": {
+        "type": "String",
+        "label": "Casting Time",
+        "value": ""
       },
       "magicMissile": {
         "type": "Boolean",
