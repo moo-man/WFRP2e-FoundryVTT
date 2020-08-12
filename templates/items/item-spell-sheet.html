@@ -44,6 +44,20 @@
       </div>
 
       <div class="form-group">
+        <label class="label-text">{{localize "WFRP2E.TrappingType.Ingredient"}}</label>
+        <div class="input-box">
+          <input class="input-text" type="text" name="data.ingredient.value" value="{{data.ingredient.value}}" data-dtype="String" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="label-text">{{localize "WFRP2E.IngredientBonus"}}</label>
+        <div class="input-box">
+          <input class="input-text" type="text" name="data.ingredient.bonus" value="{{data.ingredient.bonus}}" data-dtype="Number" />
+        </div>
+      </div>
+
+      <div class="form-group">
         <label class="label-text">{{localize "Range"}}</label>
         <div class="input-box">
           <input class="input-text" type="text" name="data.range.value" value="{{data.range.value}}" data-dtype="{{data.range.type}}" />
@@ -56,6 +70,8 @@
           <input class="input-text" type="text" name="data.damage.value" value="{{data.damage.value}}" data-dtype="{{data.damage.type}}" />
         </div>
       </div>
+
+
 
       <div class="form-group">
         <label class="label-text">{{localize "ITEM.Template"}}</label>

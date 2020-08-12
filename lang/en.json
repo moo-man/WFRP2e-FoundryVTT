@@ -512,6 +512,7 @@
     "WFRP2E.TrappingType.Ingredient" : "Ingredient",
     "WFRP2E.TrappingType.Ingredients" : "Ingredients",
     "WFRP2E.TrappingType.Misc" : "Miscellaneous",
+    "WFRP2E.IngredientBonus" : "Ingredient Bonus",
 
     "WFRP2E.EncumbrancePenalties.Encumbered" : "–1 Movement (min: 3), –10 Agility, +1 Travel Fatigue",
     "WFRP2E.EncumbrancePenalties.VeryEnc" : "–2 Movement (min: 2), –20 Agility (min: 10), +2 Travel Fatigue",
