@@ -150,6 +150,17 @@
       "tag" : "food-and-drink"
     },
 	
+	
+	{
+      "name": "arcane-lore-beasts-spells",
+      "label": "Arcane Lore (Beasts) Spells",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/arcane-lore-beasts-spells.db",
+      "entity": "Item",
+      "tag" : "arcane-lore-beasts-spells"
+    },
+	
 	{
       "name": "lighting",
       "label": "Lighting",
