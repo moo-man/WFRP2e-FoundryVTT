@@ -151,6 +151,239 @@
     },
 	
 	
+	
+	{
+      "name": "petty-magic-hedge-spells",
+      "label": "Petty Magic (Hedge) Spells",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/petty-magic-hedge-spells.db",
+      "entity": "Item",
+      "tag" : "petty-magic-hedge-spells"
+    },
+	
+	{
+      "name": "petty-magic-divine-spells",
+      "label": "Petty Magic (Divine) Spells",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/petty-magic-divine-spells.db",
+      "entity": "Item",
+      "tag" : "petty-magic-divine-spells"
+    },
+	
+	{
+      "name": "petty-magic-arcane-spells",
+      "label": "Petty Magic (Arcane) Spells",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/petty-magic-arcane-spells.db",
+      "entity": "Item",
+      "tag" : "petty-magic-arcane-spells"
+    },
+	
+	
+	{
+      "name": "lesser-magic-spells",
+      "label": "Lesser Magic Spells",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/lesser-magic-spells.db",
+      "entity": "Item",
+      "tag" : "lesser-magic-spells"
+    },
+	
+	
+	{
+      "name": "divine-lore-verena-spells",
+      "label": "Divine Lore (Verena) Spells",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/divine-lore-verena-spells.db",
+      "entity": "Item",
+      "tag" : "divine-lore-verena-spells"
+    },
+	
+	{
+      "name": "divine-lore-ulric-spells",
+      "label": "Divine Lore (Ulric) Spells",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/divine-lore-ulric-spells.db",
+      "entity": "Item",
+      "tag" : "divine-lore-ulric-spells"
+    },
+	
+	
+	{
+      "name": "divine-lore-taalrhya-spells",
+      "label": "Divine Lore (Taal - Rhya) Spells",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/divine-lore-taalrhya-spells.db",
+      "entity": "Item",
+      "tag" : "divine-lore-taalrhya-spells"
+    },
+	
+	
+	{
+      "name": "divine-lore-sigmar-spells",
+      "label": "Divine Lore (Sigmar) Spells",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/divine-lore-sigmar-spells.db",
+      "entity": "Item",
+      "tag" : "divine-lore-sigmar-spells"
+    },
+	
+	
+	{
+      "name": "divine-lore-shallya-spells",
+      "label": "Divine Lore (Shallya) Spells",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/divine-lore-shallya-spells.db",
+      "entity": "Item",
+      "tag" : "divine-lore-shallya-spells"
+    },
+	
+	{
+      "name": "divine-lore-ranald-spells",
+      "label": "Divine Lore (Ranald) Spells",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/divine-lore-ranald-spells.db",
+      "entity": "Item",
+      "tag" : "divine-lore-ranald-spells"
+    },
+	
+	{
+      "name": "divine-lore-myrmidia-spells",
+      "label": "Divine Lore (Myrmidia) Spells",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/divine-lore-myrmidia-spells.db",
+      "entity": "Item",
+      "tag" : "divine-lore-myrmidia-spells"
+    },
+	
+	{
+      "name": "divine-lore-morr-spells",
+      "label": "Divine Lore (Morr) Spells",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/divine-lore-morr-spells.db",
+      "entity": "Item",
+      "tag" : "divine-lore-morr-spells"
+    },
+	
+	
+	{
+      "name": "divine-lore-manann-spells",
+      "label": "Divine Lore (Manann) Spells",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/divine-lore-manann-spells.db",
+      "entity": "Item",
+      "tag" : "divine-lore-manann-spells"
+    },
+	
+	
+	{
+      "name": "dark-lore-necromancy-spells",
+      "label": "Dark Lore (Necromancy) Spells",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/dark-lore-necromancy-spells.db",
+      "entity": "Item",
+      "tag" : "dark-lore-necromancy-spells"
+    },
+	
+	{
+      "name": "dark-lore-chaos-spells",
+      "label": "Dark Lore (Chaos) Spells",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/dark-lore-chaos-spells.db",
+      "entity": "Item",
+      "tag" : "dark-lore-chaos-spells"
+    },
+	
+	{
+      "name": "arcane-lore-the-heavens-spells",
+      "label": "Arcane Lore (The Heavens) Spells",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/arcane-lore-the-heavens-spells.db",
+      "entity": "Item",
+      "tag" : "arcane-lore-the-heavens-spells"
+    },
+	
+	
+	{
+      "name": "arcane-lore-shadow-spells",
+      "label": "Arcane Lore (Shadow) Spells",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/arcane-lore-shadow-spells.db",
+      "entity": "Item",
+      "tag" : "arcane-lore-shadow-spells"
+    }	,
+	
+	{
+      "name": "arcane-lore-metal-spells",
+      "label": "Arcane Lore (Metal) Spells",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/arcane-lore-metal-spells.db",
+      "entity": "Item",
+      "tag" : "arcane-lore-metal-spells"
+    },
+	
+	
+	
+	{
+      "name": "arcane-lore-light-spells",
+      "label": "Arcane Lore (Light) Spells",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/arcane-lore-light-spells.db",
+      "entity": "Item",
+      "tag" : "arcane-lore-light-spells"
+    },	
+	
+	{
+      "name": "arcane-lore-life-spells",
+      "label": "Arcane Lore (Life) Spells",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/arcane-lore-life-spells.db",
+      "entity": "Item",
+      "tag" : "arcane-lore-life-spells"
+    },
+	
+	
+	{
+      "name": "arcane-lore-fire-spells",
+      "label": "Arcane Lore (Fire) Spells",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/arcane-lore-fire-spells.db",
+      "entity": "Item",
+      "tag" : "arcane-lore-fire-spells"
+    },
+	
+		
+	{
+      "name": "arcane-lore-death-spells",
+      "label": "Arcane Lore (Death) Spells",
+      "system": "wfrp2e",
+      "module": "wfrp2e",
+      "path": "./packs/arcane-lore-death-spells.db",
+      "entity": "Item",
+      "tag" : "arcane-lore-death-spells"
+    },
+	
 	{
       "name": "arcane-lore-beasts-spells",
       "label": "Arcane Lore (Beasts) Spells",
@@ -160,6 +393,8 @@
       "entity": "Item",
       "tag" : "arcane-lore-beasts-spells"
     },
+	
+	
 	
 	{
       "name": "lighting",
